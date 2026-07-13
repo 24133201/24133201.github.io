@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+h1{
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+}
+.site-logo{
+    width: 100px;
+    height: auto;
+}
+.subhead{
+    background-color: #808000;
+}
+article h1{
+    background-color: transparent;
+}
+
+.ピンク3{
+    color: #c05375;
+}
+
+.ピンク2{
+    color: #b7848c;
+}
+
+.brown{
+    color: #4b3f44;
+}
+
+.ローズゴールド{
+    color: #b76e79;
+}
+
+.ピンク1{
+    color: #d8b4a0;
+}
+
+body{
+    background: linear-gradient(to bottom,#fff9f7,#ebd9ce);
+    color:#333333;
+    font-family: "Kiwi Maru",sans-serif;
+    line-height: 1.8;
+}
+p{
+	font-size: 90%;
+}
+h1{
+	font-size: 180%;
+}
+h2{
+	font-size: 135%;
+}
+footer{
+    background-color:#A97C87;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+article{
+    position: relative;
+    clear:both;
+    width:960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catch{
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+.catch h1{
+    text-shadow: 0px 5px 10px #59484a;
+}
+.title-area{
+    display: flex;
+    align-items:center;
+    gap: 15px
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 0;
+}
+nav li{
+    color: #ffffff;
+    font-weight: bold;
+    border-right: 1px solid #ffffff;
+    padding-right: 20px;
+}
+nav li:last-child{
+    border-right: none;
+}
+
+.news-box{
+    background-color: rgba(255,255,255,0.5);
+    padding: 12px 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(183,110,121,0.15);
+}
+.news-box h2{
+    color: #a97c87;
+    margin: 0 0 8px 0;
+}
+
+.news-box time{
+    color: #b76e79;
+    font-weight: bold;
+}
+.nail-decoration{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 250px;
+
+    opacity: 0.9;
+}
+header img{
+    float:left;
+}
+.header-in{
+    width:960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    background-color: #A97C87;
+    padding: 15px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+@media(max-width:950px){
+    header img{
+        float:none;
+    }
+    nav ul{
+        text-align: left;
+        padding:0;
+        margin-left: 10px;
+    }
+    article{
+        width: auto;
+    }
+    article img{
+        max-width:100%;
+        height:auto;
+    }
+    .header-in{
+        width: auto;
+    }
+    }
+    
+    @media(max-width:600px){
+    nav li{
+        font-size:75%;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    footer{
+        font-size:75%;
+    }
+    .catch{
+        top:5px;
+        left:10px;
+    }
+    }
+    article > h2{
+        display:none;
+    }
+
+
+.breadcrumb{
+    list-style: none;
+    padding: 0;
+}
+.breadcrumb li{
+    display: inline;
+}
+.parts{
+    list-style-image:url("../image/aikon5..png");
+}
+.point-img{
+    float:left;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+    
+.clear{
+    clear:both;
+}
+nav ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav ul a:hover{
+    opacity: 0.7;
+}
+.breadcrumb a:link,
+.parts a:link,
+.sentou a:link{
+    color:#59484a;
+    text-decoration:none;
+}
+
+.breadcrumb a:visited,
+.parts a:visited,
+.sentou a:visited{
+    color:#a97c87;
+}
+
+.breadcrumb a:hover,
+.parts a:hover,
+.sentou a:hover{
+    color: #808000;
+    text-decoration:underline;
+}
+
+.breadcrumb a:active,
+.parts a:active,
+.sentou a:active{
+    color:#c05375;
+}
+
+footer a{
+    color:#ffffff;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.item{
+    width:30%;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.item img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(183,110,121,0.2);
+}
+
+.item p{
+    margin-top:10px;
+    font-weight:bold;
+}
+@media print{
+
+    header,
+    nav,
+    footer,
+    .nail-decoration,
+    .sentou{
+        display:none;
+    }
+    
+    body{
+        background:#ffffff;
+        color:#000000;
+    }
+    
+    }
