@@ -37,6 +37,7 @@ article h1{
 }
 
 body{
+	margin: 0;
     background: linear-gradient(to bottom,#fff9f7,#ebd9ce);
     color:#333333;
     font-family: "Kiwi Maru",sans-serif;
